@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>sidcupfamilygolf</title>
+    <link rel="shortcut icon"
+        href="data:image/png;base64,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"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div id="nav">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Loading">
+        <h4>TOPTRACER RANGE</h4>
+        <h4>Golf Lessons</h4>
+        <h4>ADVENTURE Shop</h4>
+        <h4>Coffee Shop</h4>
+        <h4>LEAGues</h4>
+
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <video autoplay loop muted src="https://sidcupfamilygolf.com/wp-content/uploads/2023/02/hero.mp4"
+        type="video/mp4"></video>
+    <div id="main">
+        <div id="page1">
+            <h1>EAT. DRINK. PLAY.</h1>
+            <h2>WELCOME TO SIDCUP FAMILY GOLF!</h2>
+            <p>Sidcup Family Golf is a multipurpose golf facility located in Sidcup, South East London. Passionate about
+                technology, player development and making golf fun and accessible to everyone.</p>
+            <div id="arrow">
+                <i class="ri-arrow-down-line"></i>
+            </div>
+
+        </div>
+
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4>TOPTRACER RANGE</h4>
+                    <h4>GOLF LESSONS</h4>
+                    <h4>ADVENTURE GOLF</h4>
+                    <h4>COFFEE SHOP</h4>
+                    <h4>LEAGUES</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4>TOPTRACER RANGE</h4>
+                    <h4>GOLF LESSONS</h4>
+                    <h4>ADVENTURE GOLF</h4>
+                    <h4>COFFEE SHOP</h4>
+                    <h4>LEAGUES</h4>
+                </div>
+            </div>
+
+            <div id="about-us">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-1-300x200.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+                    alt="" />
+                <div id="about-us-in">
+                    <h3>ABOUT US</h3>
+                    <p>
+                        Home to a 46-bay, multi-tier, floodlit driving range, powered by
+                        Toptracer Range technology. Complimented by a practice green and
+                        bunker, coffee shop and American Golf Store. There truly is
+                        something for everyone as we also boast two outdoor 18-hole
+                        dinosaur themed crazy golf courses.
+                    </p>
+                </div>
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-2-300x200.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+                    alt="" />
+            </div>
+
+            <div class="card-container">
+                <div class="card" id="card1">
+                    <div class="overlay">
+                        <h4>TopRacer Range</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                            quam molestias magni cupiditate architecto et enim quas facere
+                            ipsum tempora?
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="overlay">
+                        <h4>Adventure Golf</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                            quam molestias magni cupiditate architecto et enim quas facere
+                            ipsum tempora?
+                        </p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="overlay">
+                        <h4>Golf Lessons</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                            quam molestias magni cupiditate architecto et enim quas facere
+                            ipsum tempora?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="green-div">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="" />
+                <h4>
+                    SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX
+                </h4>
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="" />
+            </div>
+
+        </div>
+        <div id="page3">
+
+            <p>
+                Excellent couple of hours, relax and enjoy in the fun. Staff were
+                accommodating, friendly and very helpful.😇 Café on site for
+                refreshments etc. Will keep children enterntained during the holidays.
+                Worth a visit if you haven’t been👍.
+            </p>
+            <img id="colon1" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+                alt="" />
+            <img id="colon2" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+                alt="" />
+        </div>
+
+        <div id="page4">
+            <h1>WHAT ARE YOU WAITING FOR?</h1>
+            <div class="elem">
+                <h2>TOPTRACER RANGE</h2>
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+                    alt="" />
+            </div>
+
+            <div class="elem">
+                <h2>TOPTRACER RANGE</h2>
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+                    alt="" />
+            </div>
+            <div class="elem">
+                <h2>TOPTRACER RANGE</h2>
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+                    alt="" />
+            </div>
+        </div>
+       
+        <div id="footer">
+            <img
+              src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg"
+              alt=""
+            />
+            <div id="f1">
+              <img
+                src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg"
+                alt=""
+              />
+            </div>
+            <div id="f2">
+              <h3>TOPTRACER Ranges</h3>
+              <h3>Golf Lessons</h3>
+              <h3>Adventure Golf</h3>
+            </div>
+            <div id="f3">
+              <h3>coffee shop</h3>
+              <h3>LEAGUES</h3>
+              <h3>Contact us</h3>
+            </div>
+            <div id="f4">
+              <h4>
+                A20, SIDCUP BYPASS <br />
+                CHISLEHURST <br />
+                KENT <br />
+                BR7 6RP <br />
+                TEL: 0208 309 0181 <br />
+                GET DIRECTIONS <br />
+              </h4>
+            </div>
+          </div>           
+       
+
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+        integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
